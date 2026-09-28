@@ -1,0 +1,5 @@
+ValheimModding-Jotunn=2.30.2
+ZenDragon-Zen_ModLib=1.14.17
+ZenDragon-ZenBossStone=1.0.3
+Mushroom_Vikings-VegvisirCompass=1.7.1
+Chazman-RunicCharacterVault=1.0.3
