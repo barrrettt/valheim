@@ -10,8 +10,15 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
-MODS_FILE = ROOT / "mods" / "mods.txt"
-PLUGIN_DIR = ROOT / "config" / "bepinex" / "plugins"
+
+if Path("/config").is_dir():
+    # Ejecución dentro del contenedor
+    MODS_FILE = Path("/mods/mods.txt")
+    PLUGIN_DIR = Path("/config/bepinex/plugins")
+else:
+    # Ejecución directamente en el host
+    MODS_FILE = ROOT / "mods" / "mods.txt"
+    PLUGIN_DIR = ROOT / "config" / "bepinex" / "plugins"
 
 DOWNLOAD_BASE = "https://thunderstore.io/package/download"
 

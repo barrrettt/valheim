@@ -1,10 +1,28 @@
 services:
+  mod-installer:
+      image: python:3.13-alpine
+      container_name: valheim-mod-installer
+
+      volumes:
+        - ./mods:/mods:ro
+        - ./config:/config
+
+      working_dir: /mods
+
+      command: python3 update_mods.py
+
+      restart: "no"
+
   valheim:
     image: ghcr.io/lloesche/valheim-server:latest
     container_name: valheim
 
     restart: unless-stopped
     stop_grace_period: 2m
+
+    depends_on:
+      mod-installer:
+        condition: service_completed_successfully
 
     cap_add:
       - sys_nice
