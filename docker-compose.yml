@@ -58,7 +58,7 @@ services:
       # Backups
       BACKUPS: "true"
       BACKUPS_CRON: "0 * * * *"
-      BACKUPS_MAX_AGE: "7"
+      BACKUPS_MAX_AGE: "2"
 
-      # Actualizaciones cada 6 horas
-      UPDATE_CRON: "0 */6 * * *"
+      # Actualizaciones cada hora
+      UPDATE_CRON: "0 * * * *"
