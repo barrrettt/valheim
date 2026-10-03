@@ -35,9 +35,9 @@ services:
       - ./data:/opt/valheim
 
     environment:
-      SERVER_NAME: "Valheim Local"
-      WORLD_NAME: "TestWorld"
-      SERVER_PASS: "abc123.."
+      SERVER_NAME: "Valhell - hardcore"
+      WORLD_NAME: "Valhell"
+      SERVER_PASS: "huesos"
       SERVER_PUBLIC: "false"
 
       TZ: "Europe/Madrid"
