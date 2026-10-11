@@ -6,3 +6,5 @@ Mushroom_Vikings-VegvisirCompass=1.8.0
 Odinrealm-OdinRealmFishing=0.89.0
 Balrond-balrond_shipyard=1.8.4
 LJIndustries-SkillScale=1.1.0
+Goldenrevolver-Quick_Stack_Store_Sort_Trash_Restock=1.4.15
+Sfantul-NormalAchievements=1.0.2
