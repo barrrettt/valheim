@@ -40,11 +40,25 @@ docker compose ps
 docker compose logs -f valheim
 ```
 
+Si `mod-installer` termina con error y el servidor no arranca, consultar:
+
+```bash
+docker compose logs --no-color mod-installer
+```
+
 Los mods están definidos en:
 
 ```text
 mods/mods.txt
 ```
+
+Cada línea debe tener el formato `Autor-NombreDelMod=versión`, por ejemplo:
+
+```text
+ValheimModding-Jotunn=2.30.2
+```
+
+El separador antes de la versión es `=`, no `-`.
 
 Para actualizar los mods:
 
@@ -70,7 +84,7 @@ Import / Update
 Código del perfil:
 
 ```text
-01a12ab3-7f38-249e-f113-7714250a7ac6
+01a12aca-b057-0137-93ed-88be06545a32
 ```
 
 Después seleccionar el perfil y utilizar **Start modded**.
@@ -103,4 +117,3 @@ valheim/
 ```
 
 Los mundos, backups, logs y plugins descargados no se guardan en Git.
-
