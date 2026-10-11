@@ -48,7 +48,7 @@ services:
       # Configuración del mundo
       SERVER_ARGS: >-
         -modifier combat veryhard
-        -modifier deathpenalty hardcore
+        -modifier deathpenalty hard
         -modifier raids muchless
         -setkey playerevents
         -setkey nomap

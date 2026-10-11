@@ -5,7 +5,7 @@ Valheim server hard mode with mods.
 ## Configuración
 
 * Combat: **Very Hard**
-* Death penalty: **Hardcore**
+* Death penalty: **Normal** (todo el inventario queda en la lápida; se mantiene la penalización de habilidades)
 * Raids: **Much Less**
 * Sin mapa
 * Sin portales
