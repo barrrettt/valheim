@@ -9,7 +9,7 @@ services:
 
       working_dir: /mods
 
-      command: python3 update_mods.py
+      command: /bin/sh -ec "python3 update_mods.py && sh sync_anticheat.sh"
 
       restart: "no"
 

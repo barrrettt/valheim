@@ -151,10 +151,12 @@ En `config/bepinex/koumodgp/required/` se copian las carpetas de plugins de la c
 del servidor. HudLayout 1.0.3 se conserva únicamente en
 `config/bepinex/koumodgp/allowed/j1gA-HudLayout/` como referencia opcional para los clientes.
 Las copias son referencias para el anticheat, no plugins adicionales que se cargan.
-No se guardan en Git: deben prepararse también al desplegar en otro servidor.
+No se guardan en Git. El servicio `mod-installer` ejecuta `mods/sync_anticheat.sh`
+después de instalar los mods para preparar las referencias automáticamente,
+incluida la descarga de HudLayout 1.0.3 como referencia opcional, sin cargarlo en el servidor.
 
-Al añadir, quitar o actualizar mods, actualizar también esas copias para que coincidan
-con el perfil de los clientes, retirando las versiones y paquetes que ya no se permiten.
+Al actualizar mods, el instalador actualiza también sus referencias.
+Al quitar mods, retirar las copias de los paquetes que ya no se permiten.
 Después ejecutar `kougp reload` en la consola o reiniciar el servidor.
 Los detalles de las expulsiones están en `config/bepinex/koumodgp/violations.log`.
 
