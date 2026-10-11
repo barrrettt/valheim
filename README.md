@@ -84,7 +84,7 @@ Import / Update
 Código del perfil:
 
 ```text
-01a12aca-b057-0137-93ed-88be06545a32
+01a12ad5-6cee-a45c-f2ee-1ac8211e3512
 ```
 
 Después seleccionar el perfil y utilizar **Start modded**.
