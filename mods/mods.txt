@@ -1,11 +1,8 @@
 ValheimModding-Jotunn=2.30.2
-shudnal-ConditionalConfigSync=1.0.10
 ZenDragon-Zen_ModLib=1.14.21
-Chazman-RunicCharacterVault=1.0.4
 ZenDragon-ZenBossStone=1.0.3
-nbusseneau-Better_Cartography_Table=1.0.0
+Chazman-RunicCharacterVault=1.0.4
 Mushroom_Vikings-VegvisirCompass=1.8.0
-Goneryx-QuickStackPlus=1.2.6
+Odinrealm-OdinRealmFishing=0.89.0
+Balrond-balrond_shipyard=1.8.4
 LJIndustries-SkillScale=1.1.0
-Sfantul-NormalAchievements=1.0.2
-Kou-koumodgp=0.9.0
