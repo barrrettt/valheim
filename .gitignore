@@ -29,6 +29,8 @@ config/bepinex/patchers/
 
 # Plugins descargados / binarios
 config/bepinex/plugins/
+config/bepinex/koumodgp/required/
+config/bepinex/koumodgp/allowed/
 
 # Temporales
 tmp/

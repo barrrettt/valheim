@@ -10,5 +10,4 @@ Balrond-balrond_shipyard=1.8.4
 Goneryx-QuickStackPlus=1.2.6
 LJIndustries-SkillScale=1.1.0
 Sfantul-NormalAchievements=1.0.2
-j1gA-HudLayout=1.0.3
 Kou-koumodgp=0.9.0

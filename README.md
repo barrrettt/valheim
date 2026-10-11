@@ -132,7 +132,8 @@ Se mantienen las reglas de juego sincronizadas y bloqueadas donde el mod lo perm
 * BalrondShipyard: `Lock Configuration = 1`.
 * QuickStackPlus: activación y radio de búsqueda controlados por el servidor.
 
-El HUD y las teclas quedan a elección de cada jugador. HudLayout es exclusivamente local.
+El HUD y las teclas quedan a elección de cada jugador. HudLayout es exclusivamente local:
+no se instala en el servidor ni se incluye en `mods/mods.txt`.
 También se respetan las excepciones locales de cada mod, como las preferencias de inventario
 de QuickStackPlus y la opción de desmontar barcos con el martillo de BalrondShipyard.
 
@@ -140,6 +141,22 @@ Las políticas de `config/bepinex/shudnal.ConditionalConfigSync/` se dejan sin r
 adicionales para conservar los modos definidos por los autores. ConditionalConfigSync
 solo controla mods que lo integran y no puede forzar ajustes siempre locales ni
 modificar el bloqueo de mods que usan otras bibliotecas de sincronización.
+
+### Lista de mods permitidos por koumodgp
+
+El anticheat compara los identificadores y versiones reales de los plugins del cliente.
+Una lista vacía provoca expulsiones por `ModMismatch`.
+
+En `config/bepinex/koumodgp/required/` se copian las carpetas de plugins de la colección
+del servidor. HudLayout 1.0.3 se conserva únicamente en
+`config/bepinex/koumodgp/allowed/j1gA-HudLayout/` como referencia opcional para los clientes.
+Las copias son referencias para el anticheat, no plugins adicionales que se cargan.
+No se guardan en Git: deben prepararse también al desplegar en otro servidor.
+
+Al añadir, quitar o actualizar mods, actualizar también esas copias para que coincidan
+con el perfil de los clientes, retirando las versiones y paquetes que ya no se permiten.
+Después ejecutar `kougp reload` en la consola o reiniciar el servidor.
+Los detalles de las expulsiones están en `config/bepinex/koumodgp/violations.log`.
 
 ## Estructura
 

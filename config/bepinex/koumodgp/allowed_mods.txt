@@ -1,0 +1,6 @@
+# koumodgp allowed mods — one per line: guid=version  (or guid=* for any version)
+# Required on every client (missing => kick). Prefix with '?' to make it OPTIONAL
+# (allowed if present, version checked, but not required): ?guid=version
+# example:
+# com.modbykou.koumodgp=0.9.0
+# ?some.clientonly.mod=*
