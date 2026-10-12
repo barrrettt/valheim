@@ -9,3 +9,4 @@ LJIndustries-SkillScale=1.1.1
 Goldenrevolver-Quick_Stack_Store_Sort_Trash_Restock=1.4.15
 MSchmoecker-MultiUserChest=0.6.2
 Sfantul-NormalAchievements=1.0.2
+Hardwire99-LetsGo=1.0.0
