@@ -1,9 +1,8 @@
 services:
   mod-installer:
-      profiles:
-        - mods
       image: python:3.13-alpine
       container_name: valheim-mod-installer
+      user: "1000:1000"
 
       volumes:
         - ./mods:/mods:ro
@@ -21,6 +20,10 @@ services:
 
     restart: unless-stopped
     stop_grace_period: 2m
+
+    depends_on:
+      mod-installer:
+        condition: service_completed_successfully
 
     cap_add:
       - sys_nice
@@ -40,14 +43,18 @@ services:
 
       TZ: "Europe/Madrid"
 
+      # Archivos de config/ y data/ propiedad del usuario del host
+      PUID: "1000"
+      PGID: "1000"
+
       # BepInEx
-      BEPINEX: "false"
+      BEPINEX: "true"
 
       # Configuración del mundo
       SERVER_ARGS: >-
         -resetmodifiers
         -modifier combat veryhard
-        -modifier deathpenalty hard
+        -modifier deathpenalty normal
         -modifier raids muchless
         -setkey playerevents
         -setkey nomap

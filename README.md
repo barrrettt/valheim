@@ -1,17 +1,16 @@
 # valheim
 
-Valheim server hard mode. By default it starts without mods; pinned mods can be installed
-manually when needed.
+Valheim server hard mode con mods de servidor fijados en `mods/mods.txt`.
 
 ## Configuración
 
 * Combat: **Very Hard**
-* Death penalty: **Hard**
+* Death penalty: **Normal**
 * Raids: **Much Less**
 * Sin mapa
 * Sin portales
 * PvP vanilla
-* Arranque vanilla por defecto (BepInEx desactivado)
+* BepInEx con mods instalados automáticamente al arrancar
 * Backups automáticos
 * Actualización automática de Valheim
 
@@ -29,16 +28,16 @@ Instalar:
 ```bash
 git clone <REPOSITORY_URL>
 cd valheim
+mkdir -p config data
 docker compose up -d
 ```
 
-El instalador de mods solo se ejecuta cuando se solicita explícitamente. Para instalar
-los mods, activar primero `BEPINEX: "true"` en `docker-compose.yml` y ejecutar:
+`config/` y `data/` deben existir y pertenecer al usuario (UID/GID 1000) antes del
+primer arranque; si Docker los crea, serán de root y hará falta `sudo` para editarlos.
+El servidor y el instalador se ejecutan como 1000:1000 (`PUID`/`PGID`).
 
-```bash
-docker compose --profile mods run --rm mod-installer
-docker compose up -d
-```
+`mod-installer` se ejecuta antes de cada arranque: descarga los mods de `mods/mods.txt`,
+elimina los que ya no están en la lista y coloca los patchers en `config/bepinex/patchers`.
 
 Comprobar:
 
@@ -70,8 +69,7 @@ El separador antes de la versión es `=`, no `-`.
 Para actualizar los mods:
 
 ```bash
-docker compose --profile mods run --rm mod-installer
-docker compose restart valheim
+docker compose up -d --force-recreate
 ```
 
 Valheim se actualiza automáticamente cada hora.

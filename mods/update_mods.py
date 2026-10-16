@@ -15,10 +15,12 @@ if Path("/config").is_dir():
     # Ejecución dentro del contenedor
     MODS_FILE = Path("/mods/mods.txt")
     PLUGIN_DIR = Path("/config/bepinex/plugins")
+    PATCHER_DIR = Path("/config/bepinex/patchers")
 else:
     # Ejecución directamente en el host
     MODS_FILE = ROOT / "mods" / "mods.txt"
     PLUGIN_DIR = ROOT / "config" / "bepinex" / "plugins"
+    PATCHER_DIR = ROOT / "config" / "bepinex" / "patchers"
 
 DOWNLOAD_BASE = "https://thunderstore.io/package/download"
 
@@ -200,12 +202,28 @@ def main():
         print()
         print("== INSTALANDO ==")
 
-        for extracted_dir, mod in extracted:
-            target = PLUGIN_DIR / f"{mod['author']}-{mod['name']}"
+        PATCHER_DIR.mkdir(parents=True, exist_ok=True)
+        wanted = {f"{m['author']}-{m['name']}" for m in mods}
 
-            if target.exists():
-                print(f"  ↻ Actualizando {target.name}")
-                shutil.rmtree(target)
+        for base in (PLUGIN_DIR, PATCHER_DIR):
+            for old in base.iterdir():
+                if old.is_dir() and old.name not in wanted:
+                    print(f"  ✗ Eliminando {old.name}")
+                    shutil.rmtree(old)
+
+        for extracted_dir, mod in extracted:
+            package = f"{mod['author']}-{mod['name']}"
+            target = PLUGIN_DIR / package
+            patcher_target = PATCHER_DIR / package
+
+            for path in (target, patcher_target):
+                if path.exists():
+                    shutil.rmtree(path)
+
+            # BepInEx solo carga patchers desde BepInEx/patchers
+            patchers = extracted_dir / "patchers"
+            if patchers.is_dir():
+                shutil.move(str(patchers), patcher_target)
 
             shutil.copytree(extracted_dir, target)
 
