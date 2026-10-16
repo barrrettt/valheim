@@ -1,7 +1,0 @@
-# koumodgp signatures — process names or window-title fragments, one per line.
-# Matched case-insensitively as a substring of running process names + window titles.
-# Defaults for the most common external cheats (edit/add your own below):
-wemod
-cheatengine
-trainer
-wand

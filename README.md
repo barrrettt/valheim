@@ -1,20 +1,17 @@
 # valheim
 
-Valheim server hard mode with mods.
+Valheim server hard mode. By default it starts without mods; pinned mods can be installed
+manually when needed.
 
 ## Configuración
 
 * Combat: **Very Hard**
-* Death penalty: **Hardcore** (se destruye todo el inventario y las habilidades vuelven a cero)
+* Death penalty: **Hard**
 * Raids: **Much Less**
 * Sin mapa
 * Sin portales
 * PvP vanilla
-* BepInEx
-* Mods con versiones fijadas
-* Ganancia de experiencia de todas las habilidades: **x5** mediante SkillScale
-* VegvisirCompass: **1 uso**, alcance de **1000 m** desde el vegvisir de origen (solo brújulas nuevas)
-* ZenBossStone: peso de los trofeos de jefe **100** (requiere salir y volver a entrar para aplicar)
+* Arranque vanilla por defecto (BepInEx desactivado)
 * Backups automáticos
 * Actualización automática de Valheim
 
@@ -32,7 +29,14 @@ Instalar:
 ```bash
 git clone <REPOSITORY_URL>
 cd valheim
-docker compose run --rm mod-installer
+docker compose up -d
+```
+
+El instalador de mods solo se ejecuta cuando se solicita explícitamente. Para instalar
+los mods, activar primero `BEPINEX: "true"` en `docker-compose.yml` y ejecutar:
+
+```bash
+docker compose --profile mods run --rm mod-installer
 docker compose up -d
 ```
 
@@ -66,7 +70,7 @@ El separador antes de la versión es `=`, no `-`.
 Para actualizar los mods:
 
 ```bash
-docker compose run --rm mod-installer
+docker compose --profile mods run --rm mod-installer
 docker compose restart valheim
 ```
 

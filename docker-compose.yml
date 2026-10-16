@@ -1,5 +1,7 @@
 services:
   mod-installer:
+      profiles:
+        - mods
       image: python:3.13-alpine
       container_name: valheim-mod-installer
 
@@ -20,10 +22,6 @@ services:
     restart: unless-stopped
     stop_grace_period: 2m
 
-    depends_on:
-      mod-installer:
-        condition: service_completed_successfully
-
     cap_add:
       - sys_nice
 
@@ -37,13 +35,13 @@ services:
     environment:
       SERVER_NAME: "Valhell - hardcore"
       WORLD_NAME: "Valhell"
-      SERVER_PASS: "123"
+      SERVER_PASS: "huesos"
       SERVER_PUBLIC: "true"
 
       TZ: "Europe/Madrid"
 
       # BepInEx
-      BEPINEX: "true"
+      BEPINEX: "false"
 
       # Configuración del mundo
       SERVER_ARGS: >-
