@@ -54,7 +54,6 @@ services:
       SERVER_ARGS: >-
         -resetmodifiers
         -modifier combat veryhard
-        -modifier deathpenalty normal
         -modifier raids muchless
         -setkey playerevents
         -setkey nomap
