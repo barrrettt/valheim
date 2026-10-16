@@ -37,7 +37,7 @@ services:
     environment:
       SERVER_NAME: "Valhell - hardcore"
       WORLD_NAME: "Valhell"
-      SERVER_PASS: "huesos"
+      SERVER_PASS: "123"
       SERVER_PUBLIC: "true"
 
       TZ: "Europe/Madrid"
@@ -49,7 +49,7 @@ services:
       SERVER_ARGS: >-
         -resetmodifiers
         -modifier combat veryhard
-        -modifier deathpenalty hardcore
+        -modifier deathpenalty hard
         -modifier raids muchless
         -setkey playerevents
         -setkey nomap
