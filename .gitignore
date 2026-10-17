@@ -47,3 +47,6 @@ config/bepinex/RunicCharacterVault/characters/enrollment-backups/
 # Ignoramos la configuración del mod Living Factions
 config/prefs
 config/bepinex/LivingFactions/
+
+# ides
+.vscode/
