@@ -66,6 +66,8 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
 | Mercaderes e intercambios (juego base) | Sin mod especifico en la lista actual; decidir si ampliar | 🟡 |
+| Marketplace | Pendiente de probar y aprobar por los jugadores | 🧪 |
+| Player Traders | Pendiente de probar y aprobar por los jugadores | 🧪 |
 
 ## Entorno y mundo
 
