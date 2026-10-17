@@ -147853,7 +147853,7 @@ Entries:
     m_rudderRotationMax: 45
     m_minWaterImpactForce: 4
     m_minWaterImpactInterval: 2
-    m_waterImpactDamage: 10
+    m_waterImpactDamage: 0
     m_upsideDownDmgInterval: 1
     m_upsideDownDmg: 20
     m_ashlandsReady: false
@@ -147886,7 +147886,7 @@ Entries:
     m_rudderRotationMax: 45
     m_minWaterImpactForce: 3
     m_minWaterImpactInterval: 2
-    m_waterImpactDamage: 10
+    m_waterImpactDamage: 0
     m_upsideDownDmgInterval: 1
     m_upsideDownDmg: 20
     m_ashlandsReady: false
@@ -147919,7 +147919,7 @@ Entries:
     m_rudderRotationMax: 45
     m_minWaterImpactForce: 5
     m_minWaterImpactInterval: 2
-    m_waterImpactDamage: 10
+    m_waterImpactDamage: 0
     m_upsideDownDmgInterval: 1
     m_upsideDownDmg: 20
     m_ashlandsReady: false
@@ -147952,7 +147952,7 @@ Entries:
     m_rudderRotationMax: 45
     m_minWaterImpactForce: 5
     m_minWaterImpactInterval: 2
-    m_waterImpactDamage: 10
+    m_waterImpactDamage: 0
     m_upsideDownDmgInterval: 1
     m_upsideDownDmg: 20
     m_ashlandsReady: false
@@ -147985,7 +147985,7 @@ Entries:
     m_rudderRotationMax: 45
     m_minWaterImpactForce: 5
     m_minWaterImpactInterval: 2
-    m_waterImpactDamage: 10
+    m_waterImpactDamage: 0
     m_upsideDownDmgInterval: 1
     m_upsideDownDmg: 20
     m_ashlandsReady: true
@@ -181755,7 +181755,7 @@ Entries:
     m_eventDamageDeviation: 10
     m_snowBuildup: 0
     m_outsideRequiredBiomeDamage: 25
-    m_health: 500
+    m_health: 1000
     m_minToolTier: 0
     m_hitNoise: 0
     m_destroyNoise: 0
@@ -190085,7 +190085,7 @@ Entries:
     m_eventDamageDeviation: 10
     m_snowBuildup: 0
     m_outsideRequiredBiomeDamage: 25
-    m_health: 300
+    m_health: 600
     m_minToolTier: 0
     m_hitNoise: 0
     m_destroyNoise: 0
@@ -193305,7 +193305,7 @@ Entries:
     m_eventDamageDeviation: 10
     m_snowBuildup: 0
     m_outsideRequiredBiomeDamage: 25
-    m_health: 1000
+    m_health: 2000
     m_minToolTier: 0
     m_hitNoise: 0
     m_destroyNoise: 0
@@ -194530,7 +194530,7 @@ Entries:
     m_eventDamageDeviation: 10
     m_snowBuildup: 0
     m_outsideRequiredBiomeDamage: 25
-    m_health: 1000
+    m_health: 2000
     m_minToolTier: 0
     m_hitNoise: 0
     m_destroyNoise: 0
@@ -194565,7 +194565,7 @@ Entries:
     m_eventDamageDeviation: 10
     m_snowBuildup: 0
     m_outsideRequiredBiomeDamage: 25
-    m_health: 3000
+    m_health: 6000
     m_minToolTier: 0
     m_hitNoise: 0
     m_destroyNoise: 0

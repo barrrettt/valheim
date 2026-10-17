@@ -49,7 +49,7 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 | Portales (juego base) | Desactivados: `NoPortals` | 🟡 |
 | VegvisirCompass 1.8.0 | Brujula para marcar direccion POI para juego sin mapa (facilita localizar vendedores y misiones)| 🟡 |
 | BoatAnchor 1.3.3 | Anclaje de barcos | 🟡 |
-| ShipConfig 1.4.2 | Ajustes de barcos | 🟡 |
+| ShipConfig 1.4.3 | Ajustes de barcos; actualizacion pendiente de instalar y probar | 🧪 |
 | ServersideQoL PrefabConfigurator 2.3.0 | Sustituye a Instantly Destroy Boats And Carts. Solo servidor; desmontaje con martillo activado en Carts y Ships. Pendiente de instalar y probar con ShipConfig y BoatAnchor. | ✅ 🧪 |
 
 ## Animales y tameo
@@ -91,7 +91,8 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
-| Quick Stack - Store - Sort - Trash - Restock 1.4.15 | Ordenacion y guardado; alcance por acordar | 🟡 |
+| Quick Stack - Store - Sort - Trash - Restock 1.4.16 | Ordenacion y guardado; actualizacion pendiente de instalar y probar | 🧪 |
+| [ZenUI 1.9.3](https://thunderstore.io/c/valheim/p/ZenDragon/ZenUI/) | Mejoras de fabricacion, HUD y primera persona. Anadido a la lista; pendiente de instalar y probar junto a HudLayout. | ✅ 🧪 |
 | MultiUserChest 0.6.2 | Acceso simultaneo a cofres | 🟡 |
 | ServersideQoL 2.3.3 | Mejoras de comodidad del servidor | 🟡 |
 
@@ -167,7 +168,6 @@ no sustituciones verificadas.
 |---|---|---|---|---|
 | [ZenItemStands](https://thunderstore.io/c/valheim/p/ZenDragon/ZenItemStands/) (0.7.0) | Soportes de objetos y armaduras accesibles como contenedores; intercambio rapido de equipo. | 1.1.1 · 2026-09-29 | Los soportes son vanilla; la interfaz y el intercambio son adicionales. | 🧪 |
 | [ZenBeehive](https://thunderstore.io/c/valheim/p/ZenDragon/ZenBeehive/) (0.3.6) | Colmenas como contenedores; permite ajustar produccion de miel. | 1.1.0 · 2026-09-13 | No cubierto por ordenar cofres; cambia acceso y produccion de colmenas. | 🧪 |
-| [ZenUI](https://thunderstore.io/c/valheim/p/ZenDragon/ZenUI/) (1.2.2) | Mejoras de fabricacion y HUD: busqueda, ordenacion, colores, municion y primera persona. | 1.9.3 · 2026-10-13 | Comparar interfaz con Custom UI y camara con FirstPersonMode. | 🧪 |
 | [No Grass](https://thunderstore.io/c/valheim/p/VentureValheim/No_Grass/) (0.1.4) | Recupera la opcion de quitar toda la hierba en los ajustes de vegetacion. | 1.0.0 · 2026-09-09 | Preferencia de cliente; comprobar si el deslizador vanilla actual basta. | 🧪 |
 
 ### Personajes, servidor y dependencias

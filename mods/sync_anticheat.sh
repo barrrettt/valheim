@@ -19,7 +19,14 @@ while IFS= read -r line || [ -n "$line" ]; do
     fi
 done < /mods/mods.txt
 
-# These two folders are generated from mods.txt, not maintained manually.
+optional=$(mktemp -d /tmp/koumodgp-optional-XXXXXX)
+trap 'rm -rf "$optional"' EXIT HUP INT TERM
+wget -q -O "$optional/hud.zip" https://thunderstore.io/package/download/j1gA/HudLayout/1.0.4/
+mkdir "$optional/hud"
+unzip -oq "$optional/hud.zip" -d "$optional/hud"
+test -f "$optional/hud/HudLayout.dll"
+
+# These folders contain generated references, not runtime plugins.
 rm -rf "$policy/required" "$policy/allowed"
 mkdir -p "$policy/required" "$policy/allowed"
 
@@ -38,4 +45,6 @@ while IFS= read -r line || [ -n "$line" ]; do
     esac
 done < /mods/mods.txt
 
-echo "Referencias del anticheat preparadas: versiones exactas, SQoL opcional en clientes, sin mods extra."
+cp -R "$optional/hud" "$policy/allowed/j1gA-HudLayout"
+
+echo "Referencias del anticheat preparadas: versiones exactas, SQoL y HudLayout 1.0.4 opcionales."
