@@ -4,7 +4,7 @@
 🟡 Probado, pendiente de confirmar por los jugadores · 
 🧪 Pendiente de probar · 
 🔀 Varias alternativas pendientes de probar ·
-🔴 Descartado: obsoleto o sin soporte para Valheim 1.0
+🔴 Descartado: obsoleto, sin soporte para Valheim 1.0 o cubierto por otro mod
 
 
 ## Supervivencia
@@ -13,6 +13,7 @@
 |---|---|---|
 | OdinRealmFishing 0.89.0 | Pesca | 🟡 |
 | Recursos, comida y peso (juego base) | Sin modificadores | 🟡 |
+| Saltar la noche por votacion | Aprobado por los jugadores; buscar alternativa compatible a SleepSkip y probar en el servidor. Porcentaje de votos por decidir. | ✅ 🧪 |
 
 ## Combate
 
@@ -121,7 +122,7 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 Revision de Thunderstore: **17/10/2026**. Los obsoletos o sin soporte para
 Valheim 1.0 quedan descartados (🔴); el resto queda pendiente de probar (🧪).
 Los mods ya incluidos en la lista actual no se repiten aqui.
-Ninguno esta confirmado por los jugadores.
+Las aprobaciones de los jugadores se indican en cada fila.
 Las versiones de esta tabla son una referencia, no se han instalado.
 
 **Publicacion** indica la ultima version publicada por el autor indicado y su fecha.
@@ -136,15 +137,15 @@ no sustituciones verificadas.
 
 | Mod (version antigua) | Explicacion breve | Publicacion | Cobertura actual / pendiente | Estado |
 |---|---|---|---|---|
-| [PlantEverything](https://thunderstore.io/c/valheim/p/Advize/PlantEverything/) (1.20.0) | Permite plantar arbustos de bayas, setas, flores y mas vegetacion con el cultivador. | 1.21.3 · 2026-09-25 | No cubierto por la lista actual; cambia el acceso a recursos. | 🧪 |
+| [PlantEverything](https://thunderstore.io/c/valheim/p/Advize/PlantEverything/) (1.20.0) | Permite plantar arbustos de bayas, setas, flores y mas vegetacion con el cultivador. | 1.21.3 · 2026-09-25 | Aprobado por los jugadores; pendiente de probar en el servidor. | ✅ 🧪 |
 | [VikingsDoSwim](https://thunderstore.io/c/valheim/p/blacks7ar/VikingsDoSwim/) (1.4.0) | Ajusta velocidad y stamina al nadar segun la habilidad; permite bucear. | 1.4.2 · 2026-09-15 | No cubierto; probar junto a WieldEquipmentWhileSwimming. | 🧪 |
 | [WieldEquipmentWhileSwimming](https://thunderstore.io/c/valheim/p/blacks7ar/WieldEquipmentWhileSwimming/) (1.1.3) | Permite llevar y usar equipo mientras nadas o buceas. | 1.1.4 · 2026-09-15 | Complementa al anterior, no hace lo mismo. | 🧪 |
-| [Wagon](https://thunderstore.io/c/valheim/p/CookieMilk/Wagon/) (1.1.7) | Engancha carros a criaturas domesticadas. | 1.1.7 · 2025-10-02 · **Obsoleto** | LetsGo ya permite que animales adultos adecuados tiren del carro; comparar restricciones. | 🔴 |
+| [Wagon](https://thunderstore.io/c/valheim/p/CookieMilk/Wagon/) (1.1.7) | Engancha carros a criaturas domesticadas. | 1.1.7 · 2025-10-02 · **Obsoleto** | Descartado: funcion cubierta por LetsGo. | 🔴 |
 | [LongerPetNames](https://thunderstore.io/c/valheim/p/Riintouge/LongerPetNames/) (1.0.1) | Amplia los nombres de animales de 10 a 100 caracteres. | 1.0.1 · 2024-06-01 | Sin nueva version; comprobar si el limite del juego actual sigue justificandolo. | 🧪 |
 | [Starvation](https://thunderstore.io/c/valheim/p/Smoothbrain/Starvation/) (1.0.4) | Introduce consecuencias por no comer: permite morir de hambre. | 1.0.4 · 2024-11-23 | No cubierto; es un cambio de supervivencia, no solo de comodidad. | 🧪 |
 | [Ranching](https://thunderstore.io/c/valheim/p/Smoothbrain/Ranching/) (1.1.3) | Habilidad que acelera la domesticacion y aumenta la produccion de animales domesticados. | 1.1.6 · 2026-02-11 · **Obsoleto** | LetsGo gestiona seguimiento y carros, no esta progresion. | 🔴 |
 | [BetterTames — TeamKoro](https://thunderstore.io/c/valheim/p/TeamKoro/BetterTames/) (0.0.7) | Protege animales domesticados de la muerte y permite que sigan al jugador. | 0.0.8 · 2025-12-28 | Seguimiento parcialmente cubierto por LetsGo; proteccion por comparar. Existe otro paquete de xtavim, no asumir que es el mismo. | 🧪 |
-| [SleepSkip](https://thunderstore.io/c/valheim/p/Azumatt/SleepSkip/) (1.2.3) | Salta la noche cuando acepta un porcentaje configurable de jugadores. | 1.3.0 · 2026-02-18 · **Obsoleto** | La regla de dormir entre jugadores existe en vanilla; este mod cambia el porcentaje necesario. | 🔴 |
+| [SleepSkip](https://thunderstore.io/c/valheim/p/Azumatt/SleepSkip/) (1.2.3) | Salta la noche cuando acepta un porcentaje configurable de jugadores. | 1.3.0 · 2026-02-18 · **Obsoleto** | Paquete descartado por obsoleto; funcionalidad aprobada por los jugadores. Buscar alternativa y probarla en el servidor. | 🔴 |
 | [JustSleep](https://thunderstore.io/c/valheim/p/shudnal/JustSleep/) (1.0.6) | Permite dormir en camas ajenas y delante del fuego. | 1.0.10 · 2026-09-16 | No sustituye a SleepSkip: cambia donde dormir, no cuantos deben hacerlo. | 🧪 |
 
 ### Combate, PvP y cooperacion
@@ -203,7 +204,6 @@ no sustituciones verificadas.
 
 | Tema | Comparacion pendiente | Estado |
 |---|---|---|
-| Animales de carga | LetsGo actual frente a Wagon obsoleto; evitar duplicar enganche de carros | 🔀 |
 | Animales domesticados | LetsGo + BetterTames de TeamKoro frente a [BetterTames de xtavim](https://thunderstore.io/c/valheim/p/xtavim/BetterTames/) (0.9.0 · 2026-09-22); comparar seguimiento, proteccion y portales | 🔀 |
 | Camara e interfaz | ZenUI frente a FirstPersonMode y Aedenthorn Custom UI; elegir funciones sin solapamientos | 🔀 |
 | Gremios | Guilds antiguo de Smoothbrain frente a [Guilds de Northarun](https://thunderstore.io/c/valheim/p/Northarun/Guilds/) (1.5.1 · 2026-10-07); distinto paquete y alcance | 🔀 |
