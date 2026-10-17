@@ -11,9 +11,10 @@
 
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
+| [PlantEverything 1.21.3](https://thunderstore.io/c/valheim/p/Advize/PlantEverything/) | Plantar bayas, setas y mas vegetacion con el cultivador. Aprobado y anadido a la lista; pendiente de instalar y probar en el servidor. | ✅ 🧪 |
 | OdinRealmFishing 0.89.0 | Pesca | 🟡 |
 | Recursos, comida y peso (juego base) | Sin modificadores | 🟡 |
-| Saltar la noche por votacion | Aprobado por los jugadores; buscar alternativa compatible a SleepSkip y probar en el servidor. Porcentaje de votos por decidir. | ✅ 🧪 |
+| ServersideQoL JustSleep 2.0.11 | Saltar la noche por votacion, aprobado por los jugadores. Anadido a la lista; pendiente de instalar y probar en el servidor. Voto sentandose; porcentaje por decidir. | ✅ 🧪 |
 
 ## Combate
 
@@ -49,6 +50,7 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 | VegvisirCompass 1.8.0 | Brujula para marcar direccion POI para juego sin mapa (facilita localizar vendedores y misiones)| 🟡 |
 | BoatAnchor 1.3.3 | Anclaje de barcos | 🟡 |
 | ShipConfig 1.4.2 | Ajustes de barcos | 🟡 |
+| ServersideQoL PrefabConfigurator 2.3.0 | Sustituye a Instantly Destroy Boats And Carts. Solo servidor; desmontaje con martillo activado en Carts y Ships. Pendiente de instalar y probar con ShipConfig y BoatAnchor. | ✅ 🧪 |
 
 ## Animales y tameo
 
@@ -60,7 +62,7 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
-| PvP (juego base) | Sin mod ni ajuste explicito para forzarlo; decidir reglas entre jugadores | 🟡 |
+| Venture Multiplayer Tweaks 1.0.0 | Elegido para PvP siempre activo. Anadido a la lista; pendiente de instalar, configurar y probar. Requiere servidor y todos los clientes. | ✅ 🧪 |
 
 ## Comercio y economia
 
@@ -137,35 +139,21 @@ no sustituciones verificadas.
 
 | Mod (version antigua) | Explicacion breve | Publicacion | Cobertura actual / pendiente | Estado |
 |---|---|---|---|---|
-| [PlantEverything](https://thunderstore.io/c/valheim/p/Advize/PlantEverything/) (1.20.0) | Permite plantar arbustos de bayas, setas, flores y mas vegetacion con el cultivador. | 1.21.3 · 2026-09-25 | Aprobado por los jugadores; pendiente de probar en el servidor. | ✅ 🧪 |
-| [VikingsDoSwim](https://thunderstore.io/c/valheim/p/blacks7ar/VikingsDoSwim/) (1.4.0) | Ajusta velocidad y stamina al nadar segun la habilidad; permite bucear. | 1.4.2 · 2026-09-15 | No cubierto; probar junto a WieldEquipmentWhileSwimming. | 🧪 |
-| [WieldEquipmentWhileSwimming](https://thunderstore.io/c/valheim/p/blacks7ar/WieldEquipmentWhileSwimming/) (1.1.3) | Permite llevar y usar equipo mientras nadas o buceas. | 1.1.4 · 2026-09-15 | Complementa al anterior, no hace lo mismo. | 🧪 |
-| [Wagon](https://thunderstore.io/c/valheim/p/CookieMilk/Wagon/) (1.1.7) | Engancha carros a criaturas domesticadas. | 1.1.7 · 2025-10-02 · **Obsoleto** | Descartado: funcion cubierta por LetsGo. | 🔴 |
-| [LongerPetNames](https://thunderstore.io/c/valheim/p/Riintouge/LongerPetNames/) (1.0.1) | Amplia los nombres de animales de 10 a 100 caracteres. | 1.0.1 · 2024-06-01 | Sin nueva version; comprobar si el limite del juego actual sigue justificandolo. | 🧪 |
-| [Starvation](https://thunderstore.io/c/valheim/p/Smoothbrain/Starvation/) (1.0.4) | Introduce consecuencias por no comer: permite morir de hambre. | 1.0.4 · 2024-11-23 | No cubierto; es un cambio de supervivencia, no solo de comodidad. | 🧪 |
-| [Ranching](https://thunderstore.io/c/valheim/p/Smoothbrain/Ranching/) (1.1.3) | Habilidad que acelera la domesticacion y aumenta la produccion de animales domesticados. | 1.1.6 · 2026-02-11 · **Obsoleto** | LetsGo gestiona seguimiento y carros, no esta progresion. | 🔴 |
-| [BetterTames — TeamKoro](https://thunderstore.io/c/valheim/p/TeamKoro/BetterTames/) (0.0.7) | Protege animales domesticados de la muerte y permite que sigan al jugador. | 0.0.8 · 2025-12-28 | Seguimiento parcialmente cubierto por LetsGo; proteccion por comparar. Existe otro paquete de xtavim, no asumir que es el mismo. | 🧪 |
-| [SleepSkip](https://thunderstore.io/c/valheim/p/Azumatt/SleepSkip/) (1.2.3) | Salta la noche cuando acepta un porcentaje configurable de jugadores. | 1.3.0 · 2026-02-18 · **Obsoleto** | Paquete descartado por obsoleto; funcionalidad aprobada por los jugadores. Buscar alternativa y probarla en el servidor. | 🔴 |
-| [JustSleep](https://thunderstore.io/c/valheim/p/shudnal/JustSleep/) (1.0.6) | Permite dormir en camas ajenas y delante del fuego. | 1.0.10 · 2026-09-16 | No sustituye a SleepSkip: cambia donde dormir, no cuantos deben hacerlo. | 🧪 |
+
 
 ### Combate, PvP y cooperacion
 
 | Mod (version antigua) | Explicacion breve | Publicacion | Cobertura actual / pendiente | Estado |
 |---|---|---|---|---|
-| [Valheim Foresight](https://thunderstore.io/c/valheim/p/CoffeeNova/Valheim_Foresight/) (1.0.0) | Indicadores de color sobre enemigos para valorar si puedes bloquear o hacer parry. | 2.0.1 · 2025-12-28 | No cubierto; decidir si encaja mostrar esta informacion. | 🧪 |
-| [PvPAlwaysOn](https://thunderstore.io/c/valheim/p/Azumatt/PvPAlwaysOn/) (2.1.2) | Fuerza PvP activo e impide que el jugador lo desactive. | 2.1.2 · 2025-03-16 · **Obsoleto** | El PvP vanilla es voluntario; no tenemos esta imposicion. | 🔴 |
-| [WardIsLove](https://thunderstore.io/c/valheim/p/Azumatt/WardIsLove/) (3.7.1) | Protecciones de zona configurables por ward, con interfaz para propietarios y administradores. | 3.7.2 · 2026-02-04 · **Obsoleto** | Vanilla tiene wards, pero no implica que cubra sus permisos y opciones. | 🔴 |
-| [Guilds — Smoothbrain](https://thunderstore.io/c/valheim/p/Smoothbrain/Guilds/) (1.1.11) | Sistema de gremios para jugadores. | 1.1.13 · 2026-02-20 · **Obsoleto** | No cubierto. Northarun publica otro Guilds: comparar por separado, no instalar como actualizacion directa. | 🔴 |
-| [Groups](https://thunderstore.io/c/valheim/p/Smoothbrain/Groups/) (1.2.9) | Sistema de grupos de jugadores. | 1.2.10 · 2026-02-04 · **Obsoleto** | No cubierto; comparar con gremios y necesidades reales del grupo. | 🔴 |
-| [CombatOwner](https://thunderstore.io/c/valheim/p/Smoothbrain/CombatOwner/) (1.0.0) | Busca mejorar esquivas y parries en multijugador mediante cambios de autoridad del combate. | 1.0.0 · 2024-07-13 | No cubierto; comprobar necesidad y compatibilidad de red actual. | 🧪 |
-| [DualWield](https://thunderstore.io/c/valheim/p/Smoothbrain/DualWield/) (1.0.9) | Permite empunar dos armas. | 1.0.10 · 2026-02-05 | Comparar con las armas dobles propias de vanilla: no equivale a combinar armas libremente. | 🧪 |
+| [PvPAlwaysOn](https://thunderstore.io/c/valheim/p/Azumatt/PvPAlwaysOn/) (2.1.2) | Fuerza PvP activo e impide que el jugador lo desactive. | 2.1.2 · 2025-03-16 · **Obsoleto** | El PvP vanilla es voluntario; no tenemos esta imposicion. | 🔴 | - buscar alternativas para pvp siempre ON 
+
+-> pendiente buscar algo para proteccion offline y que los wardias protegan terreno editable cerca.
 
 ### Exploracion, mundo y progresion
 
 | Mod (version antigua) | Explicacion breve | Publicacion | Cobertura actual / pendiente | Estado |
 |---|---|---|---|---|
 | [HildirsQuest](https://thunderstore.io/c/valheim/p/Smoothbrain/HildirsQuest/) (1.0.2) | Hace individual el progreso de las misiones de Hildir, en lugar de compartirlo por servidor. | 1.0.2 · 2023-10-06 | Hildir ya es vanilla; individualizar sus misiones no lo cubre ZenBossStone. | 🧪 |
-| [Sailing](https://thunderstore.io/c/valheim/p/Smoothbrain/Sailing/) (1.1.7) | Habilidad que mejora salud del barco, velocidad y radio de exploracion al navegar. | 1.1.8 · 2026-02-05 · **Obsoleto** | ShipConfig cubre ajustes del barco, pero no equivale a una habilidad que progresa. | 🔴 |
 | [Venture Location Reset](https://thunderstore.io/c/valheim/p/VentureValheim/Venture_Location_Reset/) (0.10.7) | Regenera mazmorras, ubicaciones y leviatanes cada cierto numero de dias del juego. | 1.1.1 · 2026-09-27 | MWL anade lugares, no los regenera; revisar protecciones de bases y compatibilidad con sus ubicaciones. | 🧪 |
 | [ZenMap](https://thunderstore.io/c/valheim/p/ZenDragon/ZenMap/) (1.3.0) | Mapa en mesa de cartografia, mapas transportables y seguimiento de elementos del mundo. | 1.11.1 · 2026-10-06 | Amplia la regla actual sin mapa; decidir que informacion permitir. | 🧪 |
 | [ZenCompass](https://thunderstore.io/c/valheim/p/ZenDragon/ZenCompass/) (1.4.8) | Brujula radial fabricable, con hora y direccion del viento. | 1.8.0 · 2026-09-13 | Comparar con VegvisirCompass: comparten orientacion, no necesariamente objetivos ni funcionamiento. | 🧪 |
@@ -176,16 +164,8 @@ no sustituciones verificadas.
 
 | Mod (version antigua) | Explicacion breve | Publicacion | Cobertura actual / pendiente | Estado |
 |---|---|---|---|---|
-| [LimitWorkstationDiscovery](https://thunderstore.io/c/valheim/p/Azumatt/LimitWorkstationDiscovery/) (1.0.3) | Reduce el radio de descubrimiento de estaciones para exigir acercarse o interactuar. | 1.0.3 · 2025-03-14 · **Obsoleto** | No cubierto; comprobar comportamiento con las estaciones actuales. | 🔴 |
-| [Instantly Destroy Boats And Carts](https://thunderstore.io/c/valheim/p/Goldenrevolver/Instantly_Destroy_Boats_And_Carts/) (1.0.4) | Desmonta barcos y carros con la funcion de destruir del martillo. | 1.0.5 · 2026-10-16 | BoatAnchor ancla y ShipConfig ajusta barcos; no dar por cubierto el desmontaje. | 🧪 |
-| [DynamicStoragePiles](https://thunderstore.io/c/valheim/p/MSchmoecker/DynamicStoragePiles/) (0.7.0) | Pilas de recursos que funcionan como contenedores y cambian de aspecto segun contenido. | 0.8.1 · 2026-09-10 | Vanilla tiene pilas decorativas; esto anade almacenamiento dinamico. | 🧪 |
-| [FenceSnap](https://thunderstore.io/c/valheim/p/MSchmoecker/FenceSnap/) (0.3.0) | Anade puntos de encaje a vallas y estacas. | 0.3.0 · 2023-04-03 | Comparar con el encaje del juego actual antes de anadirlo. | 🧪 |
-| [RecyclePlus](https://thunderstore.io/c/valheim/p/TastyChickenLegs/RecyclePlus/) (1.3.0) | Borra o recicla objetos desde el inventario, con opciones de papelera. | 1.3.8 · 2026-10-13 | Quick Stack ya incluye papelera; comparar recuperacion de materiales. El obliterador vanilla no es equivalente. | 🧪 |
 | [ZenItemStands](https://thunderstore.io/c/valheim/p/ZenDragon/ZenItemStands/) (0.7.0) | Soportes de objetos y armaduras accesibles como contenedores; intercambio rapido de equipo. | 1.1.1 · 2026-09-29 | Los soportes son vanilla; la interfaz y el intercambio son adicionales. | 🧪 |
 | [ZenBeehive](https://thunderstore.io/c/valheim/p/ZenDragon/ZenBeehive/) (0.3.6) | Colmenas como contenedores; permite ajustar produccion de miel. | 1.1.0 · 2026-09-13 | No cubierto por ordenar cofres; cambia acceso y produccion de colmenas. | 🧪 |
-| [Official BepInEx ConfigurationManager](https://thunderstore.io/c/valheim/p/Azumatt/Official_BepInEx_ConfigurationManager/) (18.4.1) | Interfaz para editar configuraciones de mods desde el juego. | 18.4.1 · 2025-06-25 · **Obsoleto** | Herramienta de cliente; no impone por si sola la configuracion del servidor. | 🔴 |
-| [FirstPersonMode](https://thunderstore.io/c/valheim/p/Azumatt/FirstPersonMode/) (1.3.10) | Camara en primera persona y ocultacion del modelo que estorba la vista. | 1.3.12 · 2026-02-11 · **Obsoleto** | ZenUI tambien anuncia primera persona; comparar como alternativas. | 🔴 |
-| [Aedenthorn Custom UI](https://thunderstore.io/c/valheim/p/Smurfgames/Aedenthorn_Custom_UI/) (0.8.1) | Cambia tamano, posicion, rotacion y distribucion de elementos del HUD. | 0.8.1 · 2025-12-16 | No cubierto; solapamiento parcial con ZenUI, no equivalencia completa. | 🧪 |
 | [ZenUI](https://thunderstore.io/c/valheim/p/ZenDragon/ZenUI/) (1.2.2) | Mejoras de fabricacion y HUD: busqueda, ordenacion, colores, municion y primera persona. | 1.9.3 · 2026-10-13 | Comparar interfaz con Custom UI y camara con FirstPersonMode. | 🧪 |
 | [No Grass](https://thunderstore.io/c/valheim/p/VentureValheim/No_Grass/) (0.1.4) | Recupera la opcion de quitar toda la hierba en los ajustes de vegetacion. | 1.0.0 · 2026-09-09 | Preferencia de cliente; comprobar si el deslizador vanilla actual basta. | 🧪 |
 
@@ -198,14 +178,39 @@ no sustituciones verificadas.
 | [SmoothSave](https://thunderstore.io/c/valheim/p/Smoothbrain/SmoothSave/) (1.0.5) | Busca reducir el paron al guardar el mundo. | 1.0.5 · 2023-11-20 · **Obsoleto** | Backups no solucionan ese paron; medir primero con el guardado del Valheim actual. | 🔴 |
 | [Venture Logout Tweaks](https://thunderstore.io/c/valheim/p/VentureValheim/Venture_Logout_Tweaks/) (0.6.0) | Conserva y restaura ciertos efectos, como Descansado, al desconectar y volver. | 1.0.0 · 2026-09-10 | Comparar persistencia vanilla y convivencia con RunicCharacterVault. | 🧪 |
 | [BepInExPack Valheim](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/) (5.4.2333) | Cargador y base de ejecucion de los mods de Valheim. | 5.4.2351 · 2026-09-24 | Docker ya instala BepInEx; no anadir el pack a plugins. Verificar aparte la version instalada. | 🧪 |
-| [QuaaludeInmersiveModPack](https://thunderstore.io/c/valheim/p/Smurfgames/QuaaludeInmersiveModPack/) (1.0.10) | Coleccion de mods requerida por el antiguo servidor Quaalude. | 1.0.11 · 2025-12-18 | Es un modpack, no una funcion individual; revisar dependencias sin importar el conjunto a ciegas. | 🧪 |
 
 ### Alternativas por comparar
 
+#### Saltar la noche por votacion — elegido ServersideQoL JustSleep
+
+La funcionalidad esta aprobada por los jugadores y se ha elegido ServersideQoL JustSleep.
+Falta instalarlo, probarlo en el servidor y acordar el porcentaje de votos. No instalar varias a la vez.
+El SleepSkip original sigue descartado por obsoleto.
+
+| Alternativa | Funcionamiento e instalacion | Valoracion | Estado |
+|---|---|---|---|
+| [ServersideQoL JustSleep 2.0.11](https://thunderstore.io/c/valheim/p/ArgusMagnus/ServersideQoL_JustSleep/) | Solo servidor. Se vota sentandose; permite ajustar minimo de jugadores en cama y porcentaje de jugadores en cama o sentados. | Primera opcion recomendada: ya tenemos ServersideQoL 2.3.3, superior a la dependencia minima 2.0.11. Falta probar compatibilidad en partida. No es el JustSleep de shudnal. | 🧪 |
+| [SleepSkip 1.0 Fork 1.3.1](https://thunderstore.io/c/valheim/p/TeamNibake/SleepSkip1point0fork/) | Reconstruccion no oficial de SleepSkip para Valheim 1.0.7. Obligatorio en servidor y todos los clientes con la misma version; no combinar con el original. | Alternativa mas cercana al mod antiguo. Su declaracion de soporte 1.0.7 no garantiza el parche actual. | 🧪 |
+| [LessSleep 1.0.0](https://thunderstore.io/c/valheim/p/LessCx/LessSleep/) | Servidor y cliente opcional. Voto Y/N o chat para clientes con mod; umbrales y tiempo de votacion configurables. | Sin clientes con el mod, salta automaticamente al alcanzar el minimo en cama: no garantiza voto explicito de todos. | 🧪 |
+
+Fuentes: documentacion de cada paquete en Thunderstore, consultada el 17/10/2026.
+
+#### PvP obligatorio — elegido Venture Multiplayer Tweaks
+
+| Alternativa | Funcionamiento | Pendiente | Estado |
+|---|---|---|---|
+| [Venture Multiplayer Tweaks 1.0.0](https://thunderstore.io/c/valheim/p/VentureValheim/Venture_Multiplayer_Tweaks/) | Fuerza PvP con `OverridePlayerPVP = true` y `ForcePlayerPVPOn = true`; deshabilita el boton para jugadores, con excepcion de administradores. Requiere servidor y clientes; sincroniza mediante Jotunn. | Primera opcion para PvP global. Revisar sus otras funciones de muerte y proteccion al reaparecer para no interferir con TXC-SkillLoss. El cambio de PvP requiere reconectar o reaparecer. | 🧪 |
+| [PvP Biome Dominions 1.8.0](https://thunderstore.io/c/valheim/p/turbero/PvPBiomeDominions/) | Reglas PvP obligatorio, PvE o eleccion del jugador por bioma; tambien gestiona posiciones, wards y tumbas. | Opcion para reglas por zonas. Verificar instalacion en cliente/servidor y desactivar ajustes de tumbas que solapen con otros mods. | 🧪 |
+
+Venture Multiplayer Tweaks 1.0.0 esta aprobado y anadido a la lista de mods para
+PvP siempre activo. Falta instalarlo, configurarlo y probarlo con el parche actual.
+PvP Biome Dominions queda solo como alternativa, sin instalar.
+Fuentes: documentacion de cada paquete, consultada el 18/10/2026.
+
+#### Otras alternativas
+
 | Tema | Comparacion pendiente | Estado |
 |---|---|---|
-| Animales domesticados | LetsGo + BetterTames de TeamKoro frente a [BetterTames de xtavim](https://thunderstore.io/c/valheim/p/xtavim/BetterTames/) (0.9.0 · 2026-09-22); comparar seguimiento, proteccion y portales | 🔀 |
 | Camara e interfaz | ZenUI frente a FirstPersonMode y Aedenthorn Custom UI; elegir funciones sin solapamientos | 🔀 |
 | Gremios | Guilds antiguo de Smoothbrain frente a [Guilds de Northarun](https://thunderstore.io/c/valheim/p/Northarun/Guilds/) (1.5.1 · 2026-10-07); distinto paquete y alcance | 🔀 |
 | Navegacion | ShipConfig actual frente a Sailing; ajustes fijos frente a progresion por habilidad | 🔀 |
-| Orientacion | VegvisirCompass actual frente a ZenCompass; comparar informacion y uso sin mapa | 🔀 |
