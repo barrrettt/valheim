@@ -21,6 +21,13 @@ En **r2modman → Valheim → Import / Update → From code**, importar el perfi
 
 Usar **Start modded** y mantener las versiones compatibles con el servidor.
 
+Kou koumodgp 0.9.0 debe estar en servidor y clientes. El instalador regenera
+`config/bepinex/koumodgp/required/` y `allowed/` desde la lista de mods: versiones
+exactas, sin extras; los tres paquetes ServersideQoL no se exigen a los clientes.
+No editar esas carpetas manualmente. `ExclusiveCharacter = false` deja la gestion
+de personajes a RunicCharacterVault. Kou mantiene sus otros controles por defecto
+y, segun su documentacion, exime a los administradores.
+
 ## Comandos
 
 Ejecutar desde la carpeta del repositorio. Requiere Docker Compose.

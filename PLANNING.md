@@ -11,10 +11,10 @@
 
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
-| [PlantEverything 1.21.3](https://thunderstore.io/c/valheim/p/Advize/PlantEverything/) | Plantar bayas, setas y mas vegetacion con el cultivador. Aprobado y anadido a la lista; pendiente de instalar y probar en el servidor. | ✅ 🧪 |
+| [PlantEverything 1.21.3](https://thunderstore.io/c/valheim/p/Advize/PlantEverything/) | Instalado; restricciones de bioma desactivadas para plantas vanilla y del mod. Resto de requisitos sin cambios. Pendiente de probar en partida. | ✅ 🧪 |
 | OdinRealmFishing 0.89.0 | Pesca | 🟡 |
 | Recursos, comida y peso (juego base) | Sin modificadores | 🟡 |
-| ServersideQoL JustSleep 2.0.11 | Saltar la noche por votacion, aprobado por los jugadores. Anadido a la lista; pendiente de instalar y probar en el servidor. Voto sentandose; porcentaje por decidir. | ✅ 🧪 |
+| ServersideQoL JustSleep 2.0.11 | Instalado y activo. Una persona en cama inicia el aviso; exige el 100% de jugadores en cama o sentados. Pendiente de probar en partida. | ✅ 🧪 |
 
 ## Combate
 
@@ -62,7 +62,7 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
-| Venture Multiplayer Tweaks 1.0.0 | Elegido para PvP siempre activo. Anadido a la lista; pendiente de instalar, configurar y probar. Requiere servidor y todos los clientes. | ✅ 🧪 |
+| Venture Multiplayer Tweaks 1.0.0 | Instalado; configurado PvP siempre activo, sin excepcion para administradores. Mantiene perdida de habilidades en muertes normales y PvP. Requiere servidor y clientes; reconectar o reaparecer para aplicar PvP. Pendiente de probar en partida. | ✅ 🧪 |
 
 ## Comercio y economia
 
@@ -100,6 +100,7 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
 | RunicCharacterVault 1.0.4 | Guardado y restricciones de personajes | 🟡 |
+| Kou koumodgp 0.9.0 | Anadido; obligatorio en servidor y clientes. Mods y versiones segun la lista, sin extras; SQoL solo servidor no obligatorio en clientes. `ExclusiveCharacter = false`: personajes gestionados por RunicCharacterVault. Pendiente de instalar y probar; otros controles de Kou por defecto. Administradores exentos segun el autor. | ✅ 🧪 |
 | Acceso externo | Conexion mediante `barrrettt.duckdns.org:2456` | 🟡 |
 | Actualizaciones de Valheim | Comprobacion cada hora; se omite si hay jugadores conectados | 🟡 |
 | Backups | Cada hora, conservados 2 dias; falta probar restauracion | 🧪 |
@@ -184,7 +185,8 @@ no sustituciones verificadas.
 #### Saltar la noche por votacion — elegido ServersideQoL JustSleep
 
 La funcionalidad esta aprobada por los jugadores y se ha elegido ServersideQoL JustSleep.
-Falta instalarlo, probarlo en el servidor y acordar el porcentaje de votos. No instalar varias a la vez.
+Instalado; porcentaje acordado: 100%, con minimo de una persona en cama para iniciar el aviso.
+Falta probarlo en partida. No instalar varias alternativas a la vez.
 El SleepSkip original sigue descartado por obsoleto.
 
 | Alternativa | Funcionamiento e instalacion | Valoracion | Estado |

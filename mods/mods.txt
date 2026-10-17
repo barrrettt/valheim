@@ -20,3 +20,4 @@ ArgusMagnus-ServersideQoL_PrefabConfigurator=2.3.0
 ArgusMagnus-ServersideQoL_JustSleep=2.0.11
 Advize-PlantEverything=1.21.3
 VentureValheim-Venture_Multiplayer_Tweaks=1.0.0
+Kou-koumodgp=0.9.0

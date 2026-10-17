@@ -8,8 +8,6 @@ if ! grep -qx 'Kou-koumodgp=.*' /mods/mods.txt; then
     exit 0
 fi
 
-mkdir -p "$policy/required" "$policy/allowed"
-
 while IFS= read -r line || [ -n "$line" ]; do
     case "$line" in
         ""|\#*) continue ;;
@@ -19,16 +17,25 @@ while IFS= read -r line || [ -n "$line" ]; do
         echo "ERROR: Falta el plugin para autorizar: $package" >&2
         exit 1
     fi
-    cp -R "$plugins/$package" "$policy/required/"
 done < /mods/mods.txt
 
-# HUD is not installed on the server; its archive is only an optional reference.
-hud="$policy/allowed/j1gA-HudLayout"
-mkdir -p "$hud"
-archive=$(mktemp /tmp/hudlayout-XXXXXX)
-trap 'rm -f "$archive"' EXIT HUP INT TERM
-wget -q -O "$archive" https://thunderstore.io/package/download/j1gA/HudLayout/1.0.3/
-unzip -oq "$archive" -d "$hud"
-test -f "$hud/HudLayout.dll"
+# These two folders are generated from mods.txt, not maintained manually.
+rm -rf "$policy/required" "$policy/allowed"
+mkdir -p "$policy/required" "$policy/allowed"
 
-echo "Referencias del anticheat preparadas; HudLayout 1.0.3 opcional."
+while IFS= read -r line || [ -n "$line" ]; do
+    case "$line" in
+        ""|\#*) continue ;;
+    esac
+    package=${line%%=*}
+    case "$package" in
+        ArgusMagnus-ServersideQoL|ArgusMagnus-ServersideQoL_PrefabConfigurator|ArgusMagnus-ServersideQoL_JustSleep)
+            cp -R "$plugins/$package" "$policy/allowed/"
+            ;;
+        *)
+            cp -R "$plugins/$package" "$policy/required/"
+            ;;
+    esac
+done < /mods/mods.txt
+
+echo "Referencias del anticheat preparadas: versiones exactas, SQoL opcional en clientes, sin mods extra."
