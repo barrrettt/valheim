@@ -15614,30 +15614,6 @@ Entries:
     m_start: 0
     m_sliceLines: false
     m_prefab: Circle_section
-- Component: CircleProjector
-  Enabled: false
-  PrefabNames:
-  - piece_stuward
-  Fields:
-    m_radius: 8
-    m_nrOfSegments: 80
-    m_speed: 0.1
-    m_turns: 1
-    m_start: 0
-    m_sliceLines: false
-    m_prefab: Circle_section
-- Component: CircleProjector
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
-  Fields:
-    m_radius: 8
-    m_nrOfSegments: 80
-    m_speed: 0.1
-    m_turns: 1
-    m_start: 0
-    m_sliceLines: false
-    m_prefab: Circle_section
 - Component: ConditionalObject
   Enabled: false
   PrefabNames:
@@ -29397,20 +29373,6 @@ Entries:
   Fields:
     m_statusEffect: ''
     m_playerOnly: false
-- Component: EffectArea
-  Enabled: false
-  PrefabNames:
-  - piece_stuward
-  Fields:
-    m_statusEffect: ''
-    m_playerOnly: false
-- Component: EffectArea
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
-  Fields:
-    m_statusEffect: ''
-    m_playerOnly: false
 - Component: EffectFade
   Enabled: false
   PrefabNames:
@@ -37144,18 +37106,6 @@ Entries:
   Enabled: false
   PrefabNames:
   - YggdrasilRoot
-  Fields:
-    m_ravenPrefab: Ravens
-- Component: GuidePoint
-  Enabled: false
-  PrefabNames:
-  - piece_stuward
-  Fields:
-    m_ravenPrefab: Ravens
-- Component: GuidePoint
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
   Fields:
     m_ravenPrefab: Ravens
 - Component: GuidePoint
@@ -74540,24 +74490,6 @@ Entries:
   Fields:
     m_lightLod: true
     m_lightDistance: 20
-    m_shadowLod: false
-    m_shadowDistance: 20
-- Component: LightLod
-  Enabled: false
-  PrefabNames:
-  - piece_stuward
-  Fields:
-    m_lightLod: true
-    m_lightDistance: 40
-    m_shadowLod: false
-    m_shadowDistance: 20
-- Component: LightLod
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
-  Fields:
-    m_lightLod: true
-    m_lightDistance: 40
     m_shadowLod: false
     m_shadowDistance: 20
 - Component: LightLod
@@ -133935,108 +133867,6 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
-  - piece_stuward
-  Fields:
-    m_targetNonPlayerBuilt: true
-    m_name: $stuw_piece_name
-    m_description: $stuw_piece_desc
-    m_enabled: true
-    m_isUpgrade: false
-    m_comfort: 0
-    m_comfortObject: 
-    m_groundPiece: false
-    m_allowAltGroundPlacement: false
-    m_groundOnly: false
-    m_cultivatedGroundOnly: false
-    m_waterPiece: false
-    m_clipGround: true
-    m_clipEverything: true
-    m_noInWater: false
-    m_notOnWood: false
-    m_notOnTiltingSurface: true
-    m_inCeilingOnly: false
-    m_notOnFloor: false
-    m_noClipping: true
-    m_onlyInTeleportArea: false
-    m_allowedInDungeons: false
-    m_allowedInDeepSnow: false
-    m_requireDeepSnow: false
-    m_spaceRequirement: 0
-    m_repairPiece: false
-    m_removePiece: false
-    m_canRotate: true
-    m_randomInitBuildRotation: false
-    m_canBeRemoved: true
-    m_canRockJade: false
-    m_allowRotatedOverlap: false
-    m_vegetationGroundOnly: false
-    m_blockRadius: 0
-    m_connectRadius: 0
-    m_mustBeAboveConnected: false
-    m_noVines: false
-    m_extraPlacementDistance: 0
-    m_harvest: false
-    m_harvestRadius: 0
-    m_harvestRadiusMaxLevel: 0
-    m_dlc: ''
-    m_returnResourceHeightOffset: 1
-    m_destroyedLootPrefab: 
-    m_primaryTarget: true
-    m_randomTarget: true
-- Component: Piece
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
-  Fields:
-    m_targetNonPlayerBuilt: true
-    m_name: $stuw_outpost_name
-    m_description: $stuw_outpost_desc
-    m_enabled: true
-    m_isUpgrade: false
-    m_comfort: 0
-    m_comfortObject: 
-    m_groundPiece: false
-    m_allowAltGroundPlacement: false
-    m_groundOnly: false
-    m_cultivatedGroundOnly: false
-    m_waterPiece: false
-    m_clipGround: true
-    m_clipEverything: true
-    m_noInWater: false
-    m_notOnWood: false
-    m_notOnTiltingSurface: true
-    m_inCeilingOnly: false
-    m_notOnFloor: false
-    m_noClipping: true
-    m_onlyInTeleportArea: false
-    m_allowedInDungeons: false
-    m_allowedInDeepSnow: false
-    m_requireDeepSnow: false
-    m_spaceRequirement: 0
-    m_repairPiece: false
-    m_removePiece: false
-    m_canRotate: true
-    m_randomInitBuildRotation: false
-    m_canBeRemoved: true
-    m_canRockJade: false
-    m_allowRotatedOverlap: false
-    m_vegetationGroundOnly: false
-    m_blockRadius: 0
-    m_connectRadius: 0
-    m_mustBeAboveConnected: false
-    m_noVines: false
-    m_extraPlacementDistance: 0
-    m_harvest: false
-    m_harvestRadius: 0
-    m_harvestRadiusMaxLevel: 0
-    m_dlc: ''
-    m_returnResourceHeightOffset: 1
-    m_destroyedLootPrefab: 
-    m_primaryTarget: true
-    m_randomTarget: true
-- Component: Piece
-  Enabled: false
-  PrefabNames:
   - Ashwood_Sapling
   Fields:
     m_targetNonPlayerBuilt: true
@@ -135395,32 +135225,6 @@ Entries:
     m_hoverOffset: 0
     m_connectEffect: 
     m_inRangeEffect: 
-- Component: PrivateArea
-  Enabled: false
-  PrefabNames:
-  - piece_stuward
-  Fields:
-    m_name: $stuw_piece_name
-    m_radius: 8
-    m_updateConnectionsInterval: 5
-    m_enabledByDefault: false
-    m_enabledEffect: WayEffect
-    m_hoverOffset: 0
-    m_connectEffect: vfx_guardstone_connection
-    m_inRangeEffect: InRangeIndicator
-- Component: PrivateArea
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
-  Fields:
-    m_name: $stuw_outpost_name
-    m_radius: 8
-    m_updateConnectionsInterval: 5
-    m_enabledByDefault: false
-    m_enabledEffect: WayEffect
-    m_hoverOffset: 0
-    m_connectEffect: vfx_guardstone_connection
-    m_inRangeEffect: InRangeIndicator
 - Component: Procreation
   Enabled: false
   PrefabNames:
@@ -197217,76 +197021,6 @@ Entries:
     m_destroyNoise: 0
     m_triggerPrivateArea: true
     m_autoCreateFragments: false
-- Component: WearNTear
-  Enabled: false
-  PrefabNames:
-  - piece_stuward
-  Fields:
-    m_new: new
-    m_worn: new
-    m_broken: new
-    m_wet: 
-    m_noRoofWear: false
-    m_roofCheckOffset: 0
-    m_noSupportWear: false
-    m_snowDamageImmune: false
-    m_ashDamageImmune: false
-    m_ashDamageResist: false
-    m_burnable: true
-    m_supports: false
-    m_comOffset:
-      x: 0
-      y: 0
-      z: 0
-    m_forceCorrectCOMCalculation: false
-    m_staticPosition: true
-    m_requiredPersistentEvent: ''
-    m_takeDamageIfInsideEvent: false
-    m_eventDamage: 25
-    m_eventDamageDeviation: 10
-    m_snowBuildup: 0
-    m_outsideRequiredBiomeDamage: 25
-    m_health: 1000
-    m_minToolTier: 0
-    m_hitNoise: 0
-    m_destroyNoise: 0
-    m_triggerPrivateArea: true
-    m_autoCreateFragments: true
-- Component: WearNTear
-  Enabled: false
-  PrefabNames:
-  - piece_stuward_outpost
-  Fields:
-    m_new: new
-    m_worn: new
-    m_broken: new
-    m_wet: 
-    m_noRoofWear: false
-    m_roofCheckOffset: 0
-    m_noSupportWear: false
-    m_snowDamageImmune: false
-    m_ashDamageImmune: false
-    m_ashDamageResist: false
-    m_burnable: true
-    m_supports: false
-    m_comOffset:
-      x: 0
-      y: 0
-      z: 0
-    m_forceCorrectCOMCalculation: false
-    m_staticPosition: true
-    m_requiredPersistentEvent: ''
-    m_takeDamageIfInsideEvent: false
-    m_eventDamage: 25
-    m_eventDamageDeviation: 10
-    m_snowBuildup: 0
-    m_outsideRequiredBiomeDamage: 25
-    m_health: 1000
-    m_minToolTier: 0
-    m_hitNoise: 0
-    m_destroyNoise: 0
-    m_triggerPrivateArea: true
-    m_autoCreateFragments: true
 - Component: WearNTear
   Enabled: false
   PrefabNames:

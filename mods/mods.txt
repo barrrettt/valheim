@@ -89,9 +89,14 @@ ArgusMagnus-ServersideQoL_ContainerSizes=2.0.11
 Advize-PlantEverything=1.21.3
 
 # Reglas multijugador y PvP. Ambos lados; configuracion sincronizada.
-# Config: PvP forzado siempre activo, sin excepcion admin; perdida de habilidades activa.
-# Sin anuncios de entrada, posiciones de jugadores, pings ni pins de templo/comerciantes.
+# Config: solo PvP forzado siempre activo, sin excepcion admin; resto sin restricciones.
+# Sin interruptor: inmunidad 15 s al reaparecer, banners de jefe locales y retoques de pins/tutoriales.
 VentureValheim-Venture_Multiplayer_Tweaks=1.0.0
+
+# Proteccion de wards de jugadores. OBLIGATORIO EN AMBOS LADOS; config sincronizada.
+# Config: proteccion contra dano de jugadores, cambios de terreno sin permiso y solapamientos.
+# Las cinco opciones General desactivadas; correccion de olas integrada sin interruptor.
+valph-valPHPvPTweaks=2.5.0
 
 # Controla mods adicionales, ausentes y versiones. OBLIGATORIO EN AMBOS LADOS.
 # Config: Enforce, versiones Exact, espera 30 s, registro de accesos y aviso por chat.
@@ -102,10 +107,6 @@ catosaurluna-CatosAntiCheat=1.0.4
 # Config por defecto;
 ZenDragon-ZenUI=1.9.3
 
-# Wards contra robos, dano a construcciones y cambios de terreno. Ambos lados.
-# Config pendiente de generar y revisar; incluye pins y rangos en mapa.
-sighsorry-STU_Ward=1.4.4
-
 # Grupos y chat local/privado. OBLIGATORIO EN AMBOS LADOS.
-# Config pendiente de generar y revisar: anuncia entradas y comparte posiciones en grupo.
+# Aceptado para probar anuncios de entrada y posiciones en grupo; sin config propia detectada.
 Landoria-Socialize=1.0.16
