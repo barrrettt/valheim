@@ -1,0 +1,247 @@
+# Lista de instalacion del servidor, agrupada por tematica.
+# side: "both" = servidor y clientes; "server" = solo servidor.
+# Los mods opcionales de cliente se autorizan en Catos, no se instalan aqui.
+
+# === ANTICHEAT ===
+
+[[mods]]
+package = "catosaurluna-CatosAntiCheat"
+version = "1.0.4"
+category = "Anticheat"
+side = "both"
+description = "Controla mods adicionales, ausentes y versiones."
+config = "Enforce, versiones Exact, espera 30 s, registro de accesos y aviso por chat. Opcionales: HudLayout 1.0.4 y FarmGrid_TT 1.1.2; solo servidor exentos; sin extras admin."
+
+# === DEPENDENCIAS Y BIBLIOTECAS ===
+
+[[mods]]
+package = "ValheimModding-Jotunn"
+version = "2.30.2"
+category = "Dependencias"
+side = "both"
+description = "Biblioteca para otros mods."
+config = "Configuracion propia no alterada."
+
+[[mods]]
+package = "ZenDragon-Zen_ModLib"
+version = "1.14.22"
+category = "Dependencias"
+side = "both"
+description = "Biblioteca de los mods Zen."
+config = "Por defecto."
+
+[[mods]]
+package = "ValheimModding-YamlDotNet"
+version = "16.3.1"
+category = "Dependencias"
+side = "both"
+description = "Biblioteca YAML para otros mods."
+config = "Sin config propia."
+
+[[mods]]
+package = "ValheimModding-JsonDotNET"
+version = "13.0.4"
+category = "Dependencias"
+side = "both"
+description = "Biblioteca JSON para otros mods."
+config = "Sin config propia."
+
+[[mods]]
+package = "ArgusMagnus-ServersideQoL"
+version = "2.3.3"
+category = "Dependencias"
+side = "server"
+description = "Base para los modulos SQoL; exento en CatosAntiCheat."
+config = "Por defecto; no habilita por si solo todas las funciones de sus modulos."
+
+# === PERSONAJES, PROGRESION Y MUERTE ===
+
+[[mods]]
+package = "Chazman-RunicCharacterVault"
+version = "1.0.4"
+category = "Personajes y progresion"
+side = "both"
+description = "Guarda personajes en el servidor."
+config = "AllowExistingCharacters = false; no admite incorporar personajes ya jugados."
+
+[[mods]]
+package = "TXC-SkillLoss"
+version = "1.2.0"
+category = "Personajes y progresion"
+side = "both"
+description = "Ganancia de XP y perdida de habilidades al morir; manda el servidor."
+config = "Por categorias, XP x10 y perdida del 100%; sin bonus de recuperacion ni limite de niveles perdidos. DeathCauses = Off: sin excepcion PvP."
+
+[[mods]]
+package = "ZenDragon-ZenBossStone"
+version = "1.0.3"
+category = "Personajes y progresion"
+side = "both"
+description = "Progreso individual de trofeos de jefes."
+config = "Peso del trofeo de jefe = 50 (por defecto 1200)."
+
+[[mods]]
+package = "MidnightMods-AchievementEnabler"
+version = "0.5.1"
+category = "Personajes y progresion"
+side = "both"
+description = "Habilita logros con mods; ambos lados en el perfil acordado."
+config = "Por defecto."
+
+# === PVP Y PROTECCION DE TERRENO ===
+
+[[mods]]
+package = "VentureValheim-Venture_Multiplayer_Tweaks"
+version = "1.0.0"
+category = "PvP y proteccion"
+side = "both"
+description = "Reglas multijugador y PvP; configuracion sincronizada."
+config = "Solo PvP forzado siempre activo, sin excepcion admin; resto sin restricciones. Sin interruptor: inmunidad 15 s al reaparecer, banners de jefe locales y retoques de pins/tutoriales."
+
+[[mods]]
+package = "valph-valPHPvPTweaks"
+version = "2.5.0"
+category = "PvP y proteccion"
+side = "both"
+description = "Proteccion de wards de jugadores; obligatorio en ambos lados, config sincronizada."
+config = "Proteccion contra dano de jugadores, cambios de terreno sin permiso y solapamientos. Cinco opciones General desactivadas; correccion de olas integrada sin interruptor."
+
+# === MUNDO Y EXPLORACION ===
+
+[[mods]]
+package = "warpalicious-More_World_Locations_AIO"
+version = "5.2.2"
+category = "Mundo y exploracion"
+side = "both"
+description = "Anade ubicaciones al mundo."
+config = "Telemetria anonima desactivada; resto de opciones funcionales por defecto."
+
+[[mods]]
+package = "under2ker-LivingFactions"
+version = "0.6.5"
+category = "Mundo y exploracion"
+side = "both"
+description = "Facciones y asentamientos vivos."
+config = "HudWidget = false (panel de cronica oculto); avisos de eventos activos."
+
+[[mods]]
+package = "Mushroom_Vikings-VegvisirCompass"
+version = "1.8.0"
+category = "Mundo y exploracion"
+side = "both"
+description = "Brujulas para orientarse hacia objetivos de vegvisires."
+config = "Por defecto: 1 uso y alcance de 350 metros."
+
+# === AGRICULTURA, PESCA Y ANIMALES ===
+
+[[mods]]
+package = "Advize-PlantEverything"
+version = "1.21.3"
+category = "Agricultura, pesca y animales"
+side = "both"
+description = "Permite plantar recursos y vegetacion con el cultivador."
+config = "Sin restriccion de bioma vanilla ni del mod; bloqueo del servidor activo. Proteccion ambiental conservada; overrides de cultivos desactivados."
+
+[[mods]]
+package = "Odinrealm-OdinRealmFishing"
+version = "0.89.0"
+category = "Agricultura, pesca y animales"
+side = "both"
+description = "Amplia la pesca; ambos lados en el perfil acordado."
+config = "Sin archivo propio de configuracion detectado."
+
+[[mods]]
+package = "Hardwire99-LetsGo"
+version = "1.0.0"
+category = "Agricultura, pesca y animales"
+side = "both"
+description = "Ordenes de seguimiento a animales domesticados y enganche de carros."
+config = "Por defecto."
+
+# === BARCOS Y CARROS ===
+
+[[mods]]
+package = "MilkyTeam-ShipConfig"
+version = "1.4.3"
+category = "Barcos y carros"
+side = "both"
+description = "Ajustes de barcos; configuracion bloqueada por el servidor."
+config = "Salud x2 y dano por impacto con agua = 0 en los cinco tipos configurados."
+
+[[mods]]
+package = "KalellModding-BoatAnchor"
+version = "1.3.3"
+category = "Barcos y carros"
+side = "both"
+description = "Desmontaje de barcos; el nombre del paquete es BoatAnchor."
+config = "Por defecto: desmontaje con martillo activo; pendiente revisar solapamiento con SQoL."
+
+[[mods]]
+package = "ArgusMagnus-ServersideQoL_PrefabConfigurator"
+version = "2.3.0"
+category = "Barcos y carros"
+side = "server"
+description = "Ajusta propiedades de objetos; exento en CatosAntiCheat."
+config = "Desmontaje con martillo habilitado para barcos y carros."
+
+[[mods]]
+package = "ArgusMagnus-ServersideQoL_ContainerSizes"
+version = "2.0.11"
+category = "Barcos y carros"
+side = "server"
+description = "Amplia contenedores; exento en CatosAntiCheat."
+config = "Doble de casillas en barcos: Karve 2x4, largo 6x6 y Drakkar 8x8. Sin expansion infinita; cofres y carros sin modificar."
+
+# === INVENTARIO Y COFRES ===
+
+[[mods]]
+package = "Goldenrevolver-Quick_Stack_Store_Sort_Trash_Restock"
+version = "1.4.16"
+category = "Inventario y cofres"
+side = "both"
+description = "Guardar, ordenar, reponer y tirar objetos; ambos lados en el perfil acordado."
+config = "Sin cambios funcionales respecto a valores por defecto; atajos locales."
+
+[[mods]]
+package = "MSchmoecker-MultiUserChest"
+version = "0.6.2"
+category = "Inventario y cofres"
+side = "both"
+description = "Permite abrir un cofre entre varios jugadores; ambos lados en el perfil acordado."
+config = "Sin archivo propio de configuracion detectado."
+
+# === COMERCIO Y GRUPOS ===
+
+[[mods]]
+package = "Northarun-Marketplace"
+version = "1.5.0"
+category = "Comercio y grupos"
+side = "both"
+description = "Mercado entre jugadores: ventas offline, banco, pedidos y trabajos pagados; obligatorio en ambos lados."
+config = "Comision del 10% sobre cobros, no sobre depositos; resto de reglas por defecto. Hotkey = F6: ajuste local que cada cliente debe aplicar en su perfil."
+
+[[mods]]
+package = "Landoria-Socialize"
+version = "1.0.16"
+category = "Comercio y grupos"
+side = "both"
+description = "Grupos y chat local/privado; obligatorio en ambos lados."
+config = "Aceptado para probar anuncios de entrada y posiciones en grupo; sin config propia detectada."
+
+# === INTERFAZ Y DESCANSO ===
+
+[[mods]]
+package = "ZenDragon-ZenUI"
+version = "1.9.3"
+category = "Interfaz y descanso"
+side = "both"
+description = "Mejoras de HUD, fabricacion y camara; ambos lados en el perfil acordado."
+config = "Por defecto."
+
+[[mods]]
+package = "ArgusMagnus-ServersideQoL_JustSleep"
+version = "2.0.11"
+category = "Interfaz y descanso"
+side = "server"
+description = "Votacion para saltar la noche; exento en CatosAntiCheat."
+config = "Minimo 1 en cama y 100% en cama o sentados."

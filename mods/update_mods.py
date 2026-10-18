@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 import json
+import re
 import shutil
 import sys
 import tempfile
+import tomllib
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -13,12 +15,12 @@ ROOT = Path(__file__).resolve().parent.parent
 
 if Path("/config").is_dir():
     # Ejecución dentro del contenedor
-    MODS_FILE = Path("/mods/mods.txt")
+    MODS_FILE = Path("/mods/mods.toml")
     PLUGIN_DIR = Path("/config/bepinex/plugins")
     PATCHER_DIR = Path("/config/bepinex/patchers")
 else:
     # Ejecución directamente en el host
-    MODS_FILE = ROOT / "mods" / "mods.txt"
+    MODS_FILE = ROOT / "mods" / "mods.toml"
     PLUGIN_DIR = ROOT / "config" / "bepinex" / "plugins"
     PATCHER_DIR = ROOT / "config" / "bepinex" / "patchers"
 
@@ -26,21 +28,36 @@ DOWNLOAD_BASE = "https://thunderstore.io/package/download"
 
 
 def read_mods():
+    with MODS_FILE.open("rb") as f:
+        data = tomllib.load(f)
+
+    entries = data.get("mods")
+    if not isinstance(entries, list) or not entries:
+        raise RuntimeError("mods.toml debe contener una lista [[mods]] no vacía")
+
     mods = []
+    seen = set()
+    fields = {"package", "version", "category", "side", "description", "config"}
 
-    for line in MODS_FILE.read_text().splitlines():
-        line = line.strip()
-
-        if not line or line.startswith("#"):
-            continue
-
-        try:
-            package, version = line.split("=", 1)
-        except ValueError:
+    for index, entry in enumerate(entries, 1):
+        if not isinstance(entry, dict) or set(entry) != fields:
             raise RuntimeError(
-                f"Línea inválida en mods.txt: {line}"
+                f"Mod {index}: campos requeridos: {', '.join(sorted(fields))}"
             )
-
+        if any(not isinstance(value, str) or not value.strip()
+               for value in entry.values()):
+            raise RuntimeError(f"Mod {index}: todos los campos deben ser texto no vacío")
+        package = entry["package"]
+        version = entry["version"]
+        if not re.fullmatch(r"[A-Za-z0-9_]+-[A-Za-z0-9_]+", package):
+            raise RuntimeError(f"Paquete inválido: {package}")
+        if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+            raise RuntimeError(f"Versión inválida para {package}: {version}")
+        if entry["side"] not in {"both", "server"}:
+            raise RuntimeError(f"{package}: side debe ser 'both' o 'server'")
+        if package in seen:
+            raise RuntimeError(f"Paquete duplicado: {package}")
+        seen.add(package)
         author, name = package.split("-", 1)
 
         mods.append({
@@ -154,7 +171,7 @@ def main():
     mods = read_mods()
 
     if not mods:
-        raise RuntimeError("mods.txt está vacío")
+        raise RuntimeError("mods.toml está vacío")
 
     print(f"Mods encontrados: {len(mods)}")
     print()

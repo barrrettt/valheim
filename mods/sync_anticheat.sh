@@ -1,7 +1,17 @@
 #!/bin/sh
 set -eu
 
-if ! grep -qx 'catosaurluna-CatosAntiCheat=.*' /mods/mods.txt; then
+has_anticheat=$(python3 - <<'PY'
+from update_mods import read_mods
+
+print("yes" if any(
+    mod["author"] == "catosaurluna" and mod["name"] == "CatosAntiCheat"
+    for mod in read_mods()
+) else "no")
+PY
+)
+
+if [ "$has_anticheat" = "no" ]; then
     exit 0
 fi
 

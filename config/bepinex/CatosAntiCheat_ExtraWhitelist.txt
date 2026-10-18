@@ -1,1 +1,2 @@
 j1ga.hudlayout=1.0.4
+com.teflonted.valheim.farmgrid=1.1.2
