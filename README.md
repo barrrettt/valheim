@@ -21,13 +21,11 @@ En **r2modman → Valheim → Import / Update → From code**, importar el perfi
 
 Usar **Start modded** y mantener las versiones compatibles con el servidor.
 
-Kou koumodgp 0.9.0 debe estar en servidor y clientes. El instalador regenera
-`config/bepinex/koumodgp/required/` y `allowed/` desde la lista de mods: versiones
-exactas, sin extras no autorizados; los tres paquetes ServersideQoL no se exigen
-a los clientes. HudLayout 1.0.4 (`j1ga.hudlayout`) esta autorizado como opcional.
-No editar esas carpetas manualmente. `ExclusiveCharacter = false` deja la gestion
-de personajes a RunicCharacterVault. Kou mantiene sus otros controles por defecto
-y, segun su documentacion, exime a los administradores.
+CatosAntiCheat 1.0.4 debe estar en servidor y clientes, sin Kou. Exige versiones
+exactas y rechaza extras no autorizados. Los tres paquetes ServersideQoL se
+declaran en `config/bepinex/CatosAntiCheat_ServerOnly.txt`; HudLayout 1.0.4 es
+opcional en `CatosAntiCheat_ExtraWhitelist.txt`. No hay extras para administradores
+en `CatosAntiCheat_AdminWhitelist.txt`. RunicCharacterVault sigue gestionando personajes.
 
 ## Comandos
 

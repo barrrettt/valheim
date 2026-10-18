@@ -101,7 +101,8 @@ Configuracion de muerte y XP: [txc.skillloss.cfg](config/bepinex/txc.skillloss.c
 | Mod / regla | Configuracion actual o decision pendiente | Estado |
 |---|---|---|
 | RunicCharacterVault 1.0.4 | Guardado y restricciones de personajes | 🟡 |
-| Kou koumodgp 0.9.0 | Anadido; obligatorio en servidor y clientes. Mods y versiones segun la lista, sin extras; SQoL solo servidor no obligatorio en clientes. `ExclusiveCharacter = false`: personajes gestionados por RunicCharacterVault. Pendiente de instalar y probar; otros controles de Kou por defecto. Administradores exentos segun el autor. | ✅ 🧪 |
+| CatosAntiCheat 1.0.4 | Sustituye a Kou por bajones de FPS reportados. Servidor y clientes; versiones exactas, HudLayout 1.0.4 opcional y tres paquetes SQoL solo servidor. Pendiente de comparar FPS y probar rechazos; RunicCharacterVault mantiene personajes. | ✅ 🧪 |
+| Kou koumodgp 0.9.0 | Retirado para comparar rendimiento por bajones de FPS reportados; causa no confirmada mediante medicion. | 🔴 |
 | Acceso externo | Conexion mediante `barrrettt.duckdns.org:2456` | 🟡 |
 | Actualizaciones de Valheim | Comprobacion cada hora; se omite si hay jugadores conectados | 🟡 |
 | Backups | Cada hora, conservados 2 dias; falta probar restauracion | 🧪 |
