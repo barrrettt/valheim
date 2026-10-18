@@ -1,3 +1,4 @@
 ArgusMagnus.ServersideQoL
 ArgusMagnus.ServersideQoL.PrefabConfigurator
 ArgusMagnus.ServersideQoL.JustSleep
+ArgusMagnus.ServersideQoL.ContainerSizes

@@ -22,7 +22,7 @@ En **r2modman → Valheim → Import / Update → From code**, importar el perfi
 Usar **Start modded** y mantener las versiones compatibles con el servidor.
 
 CatosAntiCheat 1.0.4 debe estar en servidor y clientes, sin Kou. Exige versiones
-exactas y rechaza extras no autorizados. Los tres paquetes ServersideQoL se
+exactas y rechaza extras no autorizados. Los paquetes exclusivos de servidor se
 declaran en `config/bepinex/CatosAntiCheat_ServerOnly.txt`; HudLayout 1.0.4 es
 opcional en `CatosAntiCheat_ExtraWhitelist.txt`. No hay extras para administradores
 en `CatosAntiCheat_AdminWhitelist.txt`. RunicCharacterVault sigue gestionando personajes.

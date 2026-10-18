@@ -1,24 +1,111 @@
+# Formato: Autor-Mod=version. Se permiten lineas vacias y comentarios con #.
+# Los comentarios van en su propia linea, no al final de una entrada.
+# "Config por defecto" significa que no hay cambios funcionales locales detectados.
+
+# Biblioteca para otros mods. Ambos lados; configuracion propia no alterada.
 ValheimModding-Jotunn=2.30.2
+
+# Biblioteca de los mods Zen. Ambos lados; configuracion por defecto.
 ZenDragon-Zen_ModLib=1.14.22
+
+# Progreso individual de trofeos de jefes. Ambos lados.
+# Config: peso del trofeo de jefe = 50 (por defecto 1200).
 ZenDragon-ZenBossStone=1.0.3
+
+# Guarda personajes en el servidor. Ambos lados.
+# Config: AllowExistingCharacters = false; no admite incorporar personajes ya jugados.
 Chazman-RunicCharacterVault=1.0.4
+
+# Brujulas para orientarse hacia objetivos de vegvisires. Ambos lados.
+# Config por defecto: 1 uso y alcance de 350 metros.
 Mushroom_Vikings-VegvisirCompass=1.8.0
+
+# Ganancia de XP y perdida de habilidades al morir. Ambos lados; manda el servidor.
+# Config: por categorias, XP x10 y perdida del 100%; sin bonus de recuperacion.
 TXC-SkillLoss=1.2.0
+
+# Guardar, ordenar, reponer y tirar objetos. Ambos lados en el perfil acordado.
+# Config: sin cambios funcionales respecto a valores por defecto; atajos locales.
 Goldenrevolver-Quick_Stack_Store_Sort_Trash_Restock=1.4.16
+
+# Permite abrir un cofre entre varios jugadores. Ambos lados en el perfil acordado.
+# Config: sin archivo propio de configuracion detectado.
 MSchmoecker-MultiUserChest=0.6.2
+
+# Ordenes de seguimiento a animales domesticados y enganche de carros. Ambos lados.
+# Config por defecto.
 Hardwire99-LetsGo=1.0.0
+
+# Amplia la pesca. Ambos lados en el perfil acordado.
+# Config: sin archivo propio de configuracion detectado.
 Odinrealm-OdinRealmFishing=0.89.0
+
+# Desmontaje de barcos; el nombre del paquete es BoatAnchor. Ambos lados.
+# Config por defecto: desmontaje con martillo activo; pendiente revisar solapamiento con SQoL.
 KalellModding-BoatAnchor=1.3.3
+
+# Ajustes de barcos. Ambos lados; configuracion bloqueada por el servidor.
+# Config: salud x2 y dano por impacto con agua = 0 en los cinco tipos configurados.
 MilkyTeam-ShipConfig=1.4.3
+
+# Base para los modulos SQoL. SOLO SERVIDOR; exento en CatosAntiCheat.
+# Config por defecto; no habilita por si solo todas las funciones de sus modulos.
 ArgusMagnus-ServersideQoL=2.3.3
+
+# Habilita logros con mods. Ambos lados en el perfil acordado.
+# Config por defecto.
 MidnightMods-AchievementEnabler=0.5.1
+
+# Anade ubicaciones al mundo. Ambos lados.
+# Config: telemetria anonima desactivada; resto de opciones funcionales por defecto.
 warpalicious-More_World_Locations_AIO=5.2.2
+
+# Biblioteca YAML para otros mods. Dependencia, no regla de juego; sin config propia.
 ValheimModding-YamlDotNet=16.3.1
+
+# Biblioteca JSON para otros mods. Dependencia, no regla de juego; sin config propia.
 ValheimModding-JsonDotNET=13.0.4
+
+# Facciones y asentamientos vivos. Ambos lados.
+# Config: HudWidget = false (panel de cronica oculto); avisos de eventos activos.
 under2ker-LivingFactions=0.6.5
+
+# Ajusta propiedades de objetos. SOLO SERVIDOR; exento en CatosAntiCheat.
+# Config: desmontaje con martillo habilitado para barcos y carros.
 ArgusMagnus-ServersideQoL_PrefabConfigurator=2.3.0
+
+# Votacion para saltar la noche. SOLO SERVIDOR; exento en CatosAntiCheat.
+# Config por defecto acordada: minimo 1 en cama y 100% en cama o sentados.
 ArgusMagnus-ServersideQoL_JustSleep=2.0.11
+
+# Amplia contenedores. SOLO SERVIDOR; exento en CatosAntiCheat.
+# Config: doble de casillas en barcos: Karve 2x4, largo 6x6 y Drakkar 8x8.
+# Sin expansion infinita; cofres y carros sin modificar.
+ArgusMagnus-ServersideQoL_ContainerSizes=2.0.11
+
+# Permite plantar recursos y vegetacion con el cultivador. Ambos lados.
+# Config: sin restriccion de bioma vanilla ni del mod; bloqueo del servidor activo.
+# Proteccion ambiental conservada; overrides de cultivos desactivados.
 Advize-PlantEverything=1.21.3
+
+# Reglas multijugador y PvP. Ambos lados; configuracion sincronizada.
+# Config: PvP forzado siempre activo, sin excepcion admin; perdida de habilidades activa.
+# Sin anuncios de entrada, posiciones de jugadores, pings ni pins de templo/comerciantes.
 VentureValheim-Venture_Multiplayer_Tweaks=1.0.0
+
+# Controla mods adicionales, ausentes y versiones. OBLIGATORIO EN AMBOS LADOS.
+# Config: Enforce, versiones Exact, espera 30 s, registro de accesos y aviso por chat.
+# HudLayout 1.0.4 opcional; paquetes solo servidor exentos; sin extras para admins.
 catosaurluna-CatosAntiCheat=1.0.4
+
+# Mejoras de HUD, fabricacion y camara. Ambos lados en el perfil acordado.
+# Config por defecto;
 ZenDragon-ZenUI=1.9.3
+
+# Wards contra robos, dano a construcciones y cambios de terreno. Ambos lados.
+# Config pendiente de generar y revisar; incluye pins y rangos en mapa.
+sighsorry-STU_Ward=1.4.4
+
+# Grupos y chat local/privado. OBLIGATORIO EN AMBOS LADOS.
+# Config pendiente de generar y revisar: anuncia entradas y comparte posiciones en grupo.
+Landoria-Socialize=1.0.16
